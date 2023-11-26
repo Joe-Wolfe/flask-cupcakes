@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake!</title>
+
+    <!--axios, jquerry, bootstraps scripts-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='static/styles.css' />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1> Cupcake List</h1>
+        <ul id="cupcake-list">
+            <!--cup cakes will be loaded here using js-->
+        </ul>
+        <h2> Add A Cupcake</h1>
+            <form id="cupcake-form">
+                <label for="flavor">Flavor:</label>
+                <input type="text" id="flavor" name="flavor" maxlength="50" placeholder="required" required>
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" maxlength="50" placeholder="required" required>
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" min="0" max="10">
+                <label for="image">Image:</label>
+                <input type="text" id="image" name="image">
+                <button class="btn btn-success">Add a cupcake</button>
+
+                <script src="static/app.js"></script>
+    </div>
+</body>
+
+</html>
